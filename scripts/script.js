@@ -9,13 +9,6 @@ var pickupLocationMarker;
 
 new gnMenu( document.getElementById( 'gn-menu' ) );
 
-var vehicleIconEnum = {
-
-}
-
-var pickupBoy = "icons/PickupBoy.png";
-
-
 function randomIndex(max) {
   return Math.floor((Math.random() * max) + 1);
 }
