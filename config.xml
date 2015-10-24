@@ -4,10 +4,10 @@
         id          = "com.savethehacker.redcar"
         version     = "1.0.0" >
 
-    <name>Redcar</name>
+    <name>DAAS</name>
 
     <description>
-        Smart Cab aggregator created for Save The Hacker 2015
+        Delivery As A Service app that we worked for the Money2020 hackathon.
     </description>
 
     <author href="https://build.phonegap.com" email="sreeni@amazon.com">
