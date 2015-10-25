@@ -33,18 +33,36 @@
         </ul>
     </div>
 
-    <div id="map-canvas"></div>
-    <div id="cab-result"></div>
-    <div id="chart-result"></div>
+    <div id="profile-table" class="clear">
+      <div class="plan">
+        <h3><span><img src="icons/dragt_bruce.png" id="deliveryguyimage"></span></h3>
+        <ul>
+          <li>
+            <b>Name</b>
+            <input type="text" readonly value="Bruce Dragt" class="gn-destination-selection" id="name">
+          </li>
+          <li>
+            <b>Type</b>
+            <select class="gn-destination-selection form-control" id="usertype-selection">
+            <option value="merchant">Merchant</option>
+              <option value="customer">Customer</option>
+              <option value="pickupguy">Pickup Guy</option>
+            </select>
+          </li>
+          <li>
+            <b>Type</b>
+            <input type="text" readonly value="Bruce Dragt" class="gn-destination-selection" id="type">
+          </li>
+          <li>
+            <b>Email</b>
+            <input type="text" readonly value="Bruce Dragt" class="gn-destination-selection" id="name">
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div id="footer">
-      <div class="input-group">
-        <div class="input-group-addon">Dest: </div>
-        <input placeholder="Type in a Destination" type="text" class="gn-destination-selection" id="destination-selection">
-      </div>
-
-      <button type="button" class="btn btn-danger btn-lg btn-block" id="request" >Request</button>
-      <!-- <button type="button" class="btn btn-default btn-lg btn-block">Book a Cab</button> -->
+      <button type="button" class="btn btn-danger btn-lg btn-block" id="save">Save</button>
     </div>
 
     <script src="scripts/jquery.min.js"></script>
@@ -56,12 +74,10 @@
     <script src="scripts/highcharts.js"></script>
     <script src="scripts/exporting.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>
-    <script src="scripts/Mapster.js"></script>
-    <script src="scripts/map-options.js"></script>
-    <script src="scripts/min-cost.js"></script>
-    <script src="scripts/chart-manipulation.js"></script>
-    <script src="scripts/script.js"></script>
+    <script type="text/javascript">
+      new gnMenu( document.getElementById( 'gn-menu' ) );
+    </script>
   </body>
+
 
 </html>
